@@ -44,3 +44,9 @@ keymap.set("n", "<S-j>", ":m+<CR>", { noremap = true, silent = true })
 keymap.set("v", "<S-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 -- Move selected text up
 keymap.set("v", "<S-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
+-- Quickfix List Navigation
+--
+-- what other options are there for this, other than ]q and [q
+keymap.set("n", "<C-]>", ":cnext<CR>", { noremap = true, silent = true })
+keymap.set("n", "<C-[>", ":cprev<CR>", { noremap = true, silent = true })

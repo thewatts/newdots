@@ -23,6 +23,7 @@ return {
       lspconfig.tsserver.setup({})
       lspconfig.ruby_ls.setup({})
       lspconfig.standardrb.setup({})
+      -- lspconfig.erblint.setup({})
 
       keymap.set("n", "<Leader>k", vim.lsp.buf.hover, {})
       keymap.set("n", "gd", vim.lsp.buf.definition, {})

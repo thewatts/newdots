@@ -6,11 +6,12 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons",
-    "MunifTanjim/nui.nvim"
+    "MunifTanjim/nui.nvim",
+    "s1n7ax/nvim-window-picker",
   },
   config = function()
     keymap.set("n", "<C-b>", ":Neotree filesystem toggle left<CR>", {})
-    keymap.set("n", "<Leader>f", ":NeoTreeReveal<CR>", {})
+    keymap.set("n", "<Leader>f", ":Neotree reveal<CR>", {})
 
     require("neo-tree").setup({
       event_handlers = {
@@ -21,7 +22,7 @@ return {
             require("neo-tree").close_all()
           end,
         },
-      }
+      },
     })
-  end
+  end,
 }

@@ -51,7 +51,7 @@ opt.iskeyword:append("-")
 opt.ttyfast = true
 
 -- don't redraw while executing macros. async window title update
-opt.lazyredraw = true
+opt.lazyredraw = false -- set to false b/c of Noice plugin
 
 -- start scrolling 3 lines from bottom
 opt.scrolloff = 3
