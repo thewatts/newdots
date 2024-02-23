@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 local keymap = vim.keymap -- for conciseness
 
 -- general keymaps
@@ -17,16 +15,16 @@ keymap.set("n", "<leader>+", "<C-a>")
 keymap.set("n", "<leader>-", "<C-x>")
 
 -- window management
-keymap.set("n", "<leader>v", "<C-w>v")     -- vertical split
-keymap.set("n", "<leader>h", "<C-w>s")     -- horizontal split
-keymap.set("n", "<leader>e", "<C-w>=")     -- make splits same size
+keymap.set("n", "<leader>v", "<C-w>v") -- vertical split
+keymap.set("n", "<leader>h", "<C-w>s") -- horizontal split
+keymap.set("n", "<leader>e", "<C-w>=") -- make splits same size
 keymap.set("n", "<leader>x", ":close<CR>") -- close current split
 
 -- tab management
-keymap.set("n", "<leader>t", ":tabnew<CR>")   -- open a new tab
+keymap.set("n", "<leader>t", ":tabnew<CR>") -- open a new tab
 keymap.set("n", "<leader>w", ":tabclose<CR>") -- close the current tab
-keymap.set("n", "<leader>]", ":tabn<CR>")     -- next tab
-keymap.set("n", "<leader>[", ":tabp<CR>")     -- previous tab
+keymap.set("n", "<leader>]", ":tabn<CR>") -- next tab
+keymap.set("n", "<leader>[", ":tabp<CR>") -- previous tab
 
 -- Toggle Paste Mode Mapping
 keymap.set("n", "<F6>", ":set paste!<CR>", { noremap = true, silent = true })
