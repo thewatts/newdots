@@ -16,6 +16,8 @@ return {
 				"yaml-language-server",
 			},
 		},
+
+		PATH = "append",
 	},
 
 	{
