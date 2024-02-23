@@ -14,7 +14,7 @@ require("lazy").setup({
 			"LazyVim/LazyVim",
 			opts = {
 				defaults = {
-					keymaps = true,
+					keymaps = false,
 				},
 			},
 		},
