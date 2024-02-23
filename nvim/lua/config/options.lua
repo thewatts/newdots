@@ -1,7 +1,9 @@
 -- for conciseness
 local opt = vim.opt
-local api = vim.api
-local cmd = vim.cmd
+-- local api = vim.api
+-- local cmd = vim.cmd
+
+vim.g.mapleader = " "
 
 -- no swap file
 opt.swapfile = false
@@ -56,12 +58,3 @@ opt.lazyredraw = false -- set to false b/c of Noice plugin
 -- start scrolling 3 lines from bottom
 opt.scrolloff = 3
 opt.sidescrolloff = 6
-
--- auto strip whitespace on save
-api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*",
-  callback = function()
-    -- Use Lua's vim.cmd to execute the Ex command for substitution
-    cmd([[%s/\s\+$//e]])
-  end,
-})
